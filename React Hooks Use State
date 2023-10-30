@@ -16,3 +16,21 @@ const assignAdmin = () => {
     </div>
   );
 }
+
+
+A N O T H E R E X A M P L E
+
+import {useState} from 'react';
+
+const Counter = () => {
+  const [clicks, setClicks] = useState(0)
+  return (
+    <div>
+  <h1>Clicked: {clicks}</h1>
+  <button onClick={() => setClicks(clicks + 1)}>Plus 0ne</button> 
+  <button onClick={() => setClicks(clicks - 1)}>Minus 0ne</button> 
+  <button onClick={() => setClicks(clicks === 0)}>Delete count</button>
+</div>
+)
+}
+export default Counter;
